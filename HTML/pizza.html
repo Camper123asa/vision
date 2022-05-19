@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자 주문서</title>
+</head>
+<body>
+    <form action="formal.php">
+    <h3>피자 주문하기</h3><br>
+    <p>고객명 : <input type="text"> </p>
+    <p>전화번호 : <input type="text"> </p>
+    <p>E-mail : <input type="text"></p>
+
+    <select name="pizza">
+        <option value="고구마">고구마피자</option>
+        <option value="불고기">불고기피자</option>
+        <option value="페퍼로니">페퍼로니피자</option>
+    </select>
+
+    <fieldset>
+        <legend>피자 사이즈</legend>
+        <p> small <input type="radio" name="size" value="small"></p>
+        <p> medium <input type="radio" name="size" value="med"></p>
+        <p> large <input type="radio" name="size" value="lar"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <p> 베이컨<input type="checkbox" name="hob" value="was"></p>
+        <p> 치즈<input type="checkbox" name="hob" value="was1"></p>
+        <p> 양파<input type="checkbox" name="hob" value="was2"></p>
+        <p> 버섯<input type="checkbox" name="hob" value="was3"></p>
+    </fieldset>
+    <p>희망배송시간 <input type="time"></p>
+    <p>배송시 요청사항 <textarea name="self" cols="20" rows="2"></textarea></p>
+    <input type="submit" value="주문하기"> <input type="reset" value="다시 선택하기">
+</form></body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈태그연습</title>
+</head>
+<body>
+    <h3>로그인</h3>
+    <form action="login.php" method="get" target="blank">
+    <P>아이디: <input type="text" name="id"></P>
+    <p>비밀번호: <input type="password" name="pwd"> </p>
+    <p>자기소개: <textarea name="self" cols="20" rows="5"></textarea></p>
+    <p>나라 <input type="text" list="con" name="national">
+        <datalist id="con">
+            <option value="한국"></option>
+            <option value="유럽"></option>
+            <option value="미국"></option>
+        </datalist></p>
+        <p>가고싶은곳 <input type="text" list="area" name="aarea">
+        <datalist id="area">
+            <option value="미국"></option>
+            <option value="제주도"></option>
+            <option value="유럽"></option>
+            <option value="남미"></option>
+            <option value="하와이"></option>
+            <option value="한국"></option>
+            <option value="러시아"></option>
+        </datalist>
+        </p>
+        <p>성별:여 <input type="radio" name="gen" value="girl">
+            성별:남 <input type="radio" name="gen" value="boy">
+        </p>
+        <p>취미:운동<input type="checkbox" name="hob" value="was" checked>
+        등산<input type="checkbox" name="hob" value="was1" checked>
+        요리<input type="checkbox" name="hob" value="was2" checked>
+        </p>
+        <input type="color" value="#ffffff"
+    <p><input type="submit" value="로그인"> <input type="reset" value="취소">
+        <button type="submit"> 
+            전송
+        </button></p>
+</form>
+</body>
+</html>

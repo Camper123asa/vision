@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나머지 input태그</title>
+</head>
+<body>
+    <h2>4월 21일 태그연습</h2><hr>
+    <form action="formal.php">
+    <table border="1"><tr>
+    <td>선택태그</td>
+    <td><select name="job">
+    <option value="사업자">사업자</option>
+    <option value="요리사">요리사</option>
+    <option value="교사">교사</option>
+</tr>
+    <tr><td><label for="logid">아이디</label></td><td><input type="text" name="id" id="logid"> </td>
+    </tr>
+    <tr><td>
+        <label for="psd">비밀번호</label></td><td><input type="password" name="psed" id="psd"></td>
+    </tr>
+    <tr><td>색상</td> <td><input type="color" value="#044000"></td></tr>
+    <tr><td>달</td> <td> <input type="month" value="2022-04-21"></td></tr>
+    <tr><td>주</td><td> <input type="week"></td></tr>
+    <tr><td>몸무게</td><td> <input type="number" min="0" max="90" step="1" placeholder="Kg"></td></tr>
+    <tr><td>이메일</td> <td><input type="mail" placeholder="abc@abc"></td></tr>
+    <tr><td colspan="2"><input type="submit" value="확인">
+    </td></tr>
+</td></select></table>
+        <fieldset style="width: 300px;">
+            <legend>회원정보</legend>
+            아이디: <input type="text"><br>
+            비밀번호: <input type="password">
+        </fieldset>
+</form>
+</body>
+</html>
