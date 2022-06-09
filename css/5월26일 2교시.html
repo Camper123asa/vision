@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>박스에 그림자</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        span{
+            border: 3px dotted blue;
+            display: block;
+            background-color: yellow;
+        }
+        #none{
+            display: none;
+        }
+        #bin{
+            display: inline;
+        }
+        #bin2{
+            display: inline-block;
+            height: 50px;
+            width: 300px;
+        }
+        .gl{
+            width: 1550px;
+            height: 1000px;
+            background-image: url("../image/ship\ war.jpg");
+            color: azure;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h3>박스에 그림자 만들기</h3>
+    <hr>
+
+    <div class="gl">Galleon</div>
+    <div>커서모양</div>
+    나는<div id="none"> div(none)</div>입니다 <br>
+    나는<div id="bin">div(inline)</div>입니다 <br>
+    나는<div id="bin2"> div(inline-block)</div>입니다 <br>
+    나는<div> <span>span(block)</span></div>입니다
+</body>
+</html>

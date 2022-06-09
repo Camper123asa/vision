@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS input태그</title>
+    <style>
+        input[type=text]{
+            color:blue;
+            border: 2px solid skyblue;
+            border-radius: 5px;
+        }
+        input[type=text]:hover{
+            background-color: aliceblue;
+        }
+        input[type=text]:focus{
+            font-size: 120%;
+        }
+        @keyframes bomb{
+            from{font-size: 500%}
+            to {font-size: 100%;}
+        }
+        @keyframes textColor{
+            0% {color:blue}
+            30% {color: red;}
+            60%{color: yellow;}
+            100%{color: darkgreen}
+        }
+        span{
+            animation-name: textColor;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        /*h3>span
+            animation-name: bomb;
+            animation-duration: 5s;
+        }*/
+        h3>span{
+        transition: font-size 5s;
+        }
+        h3>span:hover{
+            font-size: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h3><span>폼</span>꾸미기</h3>
+    <hr>
+    <p><label for="name">이름: </label><input type="text" id="name" placeholder="홍길동"></p>
+    <p><label for="none">성격: </label><input type="text" id="none"></p>
+    <p><span>구아악</span></p>
+    
+</body>
+</html>

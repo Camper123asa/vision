@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-list</title>
+    <style>
+        nav>ul>li
+        {
+            display: inline-block;
+            padding: 0px 15px 0px 15px;
+            
+        }
+        nav>ul>li:hover
+        {
+            background-color: blueviolet;
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+        nav>ul
+        {
+            background-color: olive;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        li {
+            background-color: yellowgreen;
+            
+        }
+        ul{
+            background-color: aqua;
+            list-style-image: url(../image/coffee\(1\).png);
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <h3>커피 메뉴</h3>
+    <hr>
+    <nav id="menubar">
+    <ul>
+        <li><a href="#"> Espresso</a></li>
+        <li><a href="#"> Cappuchino</a></li>
+        <li><a href="#"> Cafelatte</a></li>
+        <li><a href="#"> Americano</a></li>
+        <li><a href="#"> Home</a></li>
+    </ul></nav>
+</body>
+</html>
